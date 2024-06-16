@@ -4,31 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><button type="button">Shop now</button></li>
-            </ul>
+    <header class="header">
+        <div class="container box">
+        <a href="./index.html" class="header-logo">Velocity</a>
+        <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-link"><a href="./index.html" class="nav-item current">Home</a></li>
+            <li class="nav-link"><a href="#" class="nav-item">Contact</a></li>
+        </ul>
         </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <ul>
-                <li><h1>organic vegetables to your diet today!</h1></li>
-                <li><p>Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p></li>
-                <li><img src="./images/image 3.jpg" alt="frood"></li>
-            </ul>
+    <main class="main">
+        <!-- Секція герой -->
+        <section class="hero">
+            <div class="container">
+        <h1 class="hero-title">This is Velocity</h1>
+        <ul class="hero-list">
+            <li class="hero-link"><button type="submit" class="hero-btn">sign up</button></li>
+            <li class="hero-link"><button type="button" class="hero-btn">Learn more</button></li>
+        </ul>
+        </div>
         </section>
+        <!-- Секція що ми робимо -->
+         <section class="work">
+            <div class="container">
+         <h2 class="work-title">what we do</h2>
+         <p class="work-paragraph">This is some text inside of a div block.</p>
+         <ul class="work-list">
+            <li class="work-link">
+                <img src="./images/clock.jpg" alt="clock" class="work-img">
+                <h3 class="work-description">Graphic Design</h3>
+                <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </li>
+            <li class="work-link">
+                 <img src="./images/arrows.jpg" alt="arrows" class="work-img">
+                <h3 class="work-description">Awesome code</h3>
+                <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </li>
+            <li class="work-link">
+                 <img src="./images/drawer.jpg" alt="drawer" class="work-img">
+                <h3 class="work-description">free template</h3>
+                <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </li>
+         </ul>
+         </div>
+         </section>
+         <!-- Секція послуги -->
+         <section class="services">
+            <div class="container">
+            <h2 class="services-title">services</h2>
+            <p class="services-paragraph">This is some text inside of a div block.</p>
+            <ul class="services-list">
+                <li class="services-link">
+                    <img src="./images/bridge.jpg" alt="bridge" class="services-img">
+                    <h3 class="services-description">SERVICES one</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
+                    <button type="button" class="services-btn">Learn more</button>
+                </li>
+                <li class="services-link">
+                    <img src="./images/already.jpg" alt="already" class="services-img">
+                    <h3 class="services-description">SERVICES two</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
+                    <button type="button" class="services-btn">Learn more</button>
+                </li>
+            </ul>
+            </div>
+         </section>
+         <!-- Секція розділ вкладки -->
+          <section class="tab">
+            <div class="container">
+            <h3 class="tab-title">Tab Section</h3>
+            <p class="tab-paragraph">This is some text inside of a div block.</p>
+            <ul class="tab-list">
+                <li class="tab-btn"><button type="button" class="tab-btn">Tab Button 1</button></li>
+                <li class="tab-btn"><button type="button" class="tab-btn">Tab Button 2</button></li>
+                <li class="tab-btn"><button type="button" class="tab-btn">Tab Button 3</button></li>
+            </ul>
+            <img src="./images/piople.jpg" alt="piople" class="tab-img">
+            <h3 class="tab-description">Some Title Here</h3>
+            <p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p class="tab-text">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <p class="tab-text">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </section>
+          <!-- Секція данні -->
+           <section class="date">
+            <div class="container">
+            <ul class="date-list">
+                <li class="date-link">
+                    <h4 class="date-title">about velocity</h4>
+                    <p class="date-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </li>
+                <li class="date-link">
+                    <h4 class="date-title">useful links</h4>
+                    <p class="date-text">Phasellus gravida semper nisi</p>
+                    <p class="date-text">Suspendisse nisl elit</p>
+                    <p class="date-text">Dellentesque habitant morbi</p>
+                    <p class="date-text">Etiam sollicitudin ipsum</p>
+                </li>
+                <li class="date-link">
+                    <h4 class="date-title">social</h4>
+                    <div class="date-container">
+                        <img src="./images/twitter.png" alt="twitter" class="date-img">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="date-item">Twitter</a>
+                    </div>
+                    <div class="date-container">
+                        <img src="./images/facebook.png" alt="facebook" class="date-img">
+                        <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" class="date-item">Facebook</a>
+                    </div>
+                    <div class="date-container">
+                        <img src="./images/pinterest.png" alt="pinterest" class="date-img">
+                        <a href="https://ru.pinterest.com/" target="_blank" class="date-item">Pinterest</a>
+                    </div>
+                    <div class="date-container">
+                        <img src="./images/google.png" alt="google" class="date-img">
+                        <a href="https://www.google.com.ua/?hl=uk" target="_blank" class="date-item">Google</a>
+                    </div>
+                    <div class="date-container">
+                        <img src="./images/webflow.png" alt="webflow" class="date-img">
+                        <a href="https://webflow.com/" target="_blank" class="date-item">Webflow</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+           </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+         <div class="container">
+        <p class="footer-text">Copyright Velocity Inc. Made in Webflow.</p>
+        </div>
     </footer>
 </body>
 </html>

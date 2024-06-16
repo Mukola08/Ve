@@ -1,3 +1,360 @@
+:root {
+    --logo-color: #69B9FF;
+    --hover-color: #0082F3;
+    --text-color: #676770;
+    --title-color: #FFF;
+    --description-color: #8E8E9C;
+    --accent-color: #6A859C;
+    --section-color: #E8E8E8;
+    --btnhover-color: #2E80B6;
+    --btn-color: #92A0AD;
+    --date-color: #668CAD;
+    --fotter-color: #9E9E9E;
+    --border-color: #DCEBF7;
+    --background-color: #192024;
+}
+ 
+.container {
+  width: 978px;
+  padding-right: 19px;
+  padding-left: 19px;
+  margin: 0 auto;
+  outline: 1px solid red ;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-    background-color: green;
+  font-family: "Open Sans";
+}
+
+/* Хедер */
+.header {
+  padding-top: 11px;
+  padding-bottom: 34px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: var(--logo-color);
+font-size: 25px;
+font-weight: 400;
+line-height: 1;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-right: 613px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  color: var(--text-color);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.25; 
+}
+
+.current {
+  color: var(--hover-color);
+}
+
+.nav-item:hover, .nav-item:focus {
+color: var(--hover-color);
+font-size: 15px;
+font-weight: 400;
+line-height: 1.25; 
+}
+
+/* Секція герой */
+.hero {
+  padding-bottom: 199px;
+  padding-top: 184px;
+  background-image: url(../images/fons.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  color: var(--title-color);
+text-align: center;
+font-size: 59px;
+font-weight: 400;
+line-height: 1.01; 
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-bottom: 106px;
+}
+
+.hero-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-btn {
+  color: var(--title-color);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.31;
+letter-spacing: 2px;
+text-transform: uppercase;
+background-color: transparent;
+border-radius: 4px;
+border: 1px solid var(--title-color);
+padding: 10px 31px 12px 31px;
+}
+
+.hero-btn:hover {
+  background: var(--logo-color);
+}
+
+ /* Секція що ми робимо */
+.work {
+  padding-top: 93px;
+  padding-bottom: 90px;
+}
+
+.work-title {
+  color: var(--text-color);
+text-align: center;
+font-size: 30px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 5px;
+text-transform: uppercase;
+margin-bottom: 17px;
+}
+
+.work-paragraph {
+  color: var(--description-color);
+text-align: center;
+font-size: 17px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 100px;
+}
+
+.work-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.work-link {
+  border-radius: 5px;
+border: 1px solid var(--border-color);
+background: var(--title-color);
+width: 300px;
+height: 291px;
+}
+
+.work-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 19px;
+}
+
+.work-description {
+  color: var(--text-color);
+  text-align: center;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 7px;
+text-transform: uppercase;
+}
+
+.work-text {
+  width: 268px;
+  height: 75px;
+  text-align: center;
+  color: var(--accent-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.78;
+margin-right: auto;
+margin-left: auto;
+margin-top: 14px;
+}
+
+/* Секція послуги  */
+.services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--background-color);
+}
+
+.services-title {
+color: var(--title-color);
+text-align: center;
+font-size: 30px;
+font-weight: 400;
+line-height: 1.2; 
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+
+.services-paragraph {
+  color: var(--section-color);
+text-align: center;
+font-size: 17px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-top: 17px;
+margin-bottom: 77px;
+}
+
+.services-list {
+  display: flex;
+  gap: 50px;
+  text-align: center;
+}
+
+.services-description {
+  color: var(--title-color);
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 7px;
+text-transform: uppercase;
+width: 400px;
+margin-top: 20px;
+margin-bottom: 23px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.services-text {
+ width: 400px;
+color: var(--title-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.78; 
+margin-bottom: 17px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.services-btn {
+  color: var(--title-color);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.31; 
+letter-spacing: 2px;
+text-transform: uppercase;
+border-radius: 4px;
+border: 1px solid var(--title-color);
+padding: 10px 31px 12px 31px;
+background-color: transparent;
+}
+
+/* Секція розділ вкладки  */
+.tab {
+  padding-top: 87px;
+  padding-bottom: 90px;
+}
+
+.tab-title {
+  color: var(--text-color);
+text-align: center;
+font-size: 30px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+
+.tab-paragraph {
+  color: var(--description-color);
+text-align: center;
+font-size: 17px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-top: 17px;
+margin-bottom: 73px;
+}
+
+.tab-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 53px;
+} 
+
+.tab-btn {
+  color: var(--title-color);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.31;
+letter-spacing: 2px;
+text-transform: uppercase;
+border-radius: 4px;
+background-color: var(--btn-color);
+width: 196px;
+}
+
+.tab-btn:hover, .tab-btn:focus {
+background: var(--btnhover-color);
+}
+
+.tab-description {
+  color: var(--text-color);
+text-align: center;
+font-size: 31px;
+font-weight: 400;
+line-height: 1.16; 
+padding-top: 16px;
+padding-bottom: 14px;
+}
+
+.tab-text {
+  color: var(--accent-color);
+text-align: center;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.92;
 }
