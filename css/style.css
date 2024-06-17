@@ -12,14 +12,15 @@
     --fotter-color: #9E9E9E;
     --border-color: #DCEBF7;
     --background-color: #192024;
+    --fotter-bagraund: #383838;
 }
  
 .container {
-  width: 978px;
-  padding-right: 19px;
-  padding-left: 19px;
+  width: 970px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid red ;
+  /* outline: 1px solid red ; */
 }
 
 *,
@@ -357,4 +358,85 @@ text-align: center;
 font-size: 13px;
 font-weight: 400;
 line-height: 1.92;
+}
+/* Секція данні */
+.date {
+  padding-top: 8px;
+  padding-bottom: 26px;
+}
+
+.date-list {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.date-title {
+  color: var(--text-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 1.11; 
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-bottom: 22px;
+}
+
+.date-description {
+  color: var(--accent-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.78;
+width: 299px;
+}
+
+.date-text {
+  color: var(--date-color);
+font-size: 13px;
+font-weight: 400;
+line-height: 1.53;
+padding-bottom: 12px; 
+border-bottom: 1px solid var(--description-color);
+width: 300px;
+height: 31px;
+}
+
+.date-container {
+  display: flex;
+}
+
+
+.date-img {
+  width: 20px;
+height: 20px;
+margin-right: 10px;
+margin-left: 20px;
+margin-bottom: 17px;
+}
+
+.date-item {
+  color: var(--date-color);
+font-size: 13px;
+font-weight: 400;
+line-height: 1.53;
+padding-bottom: 12px;
+border-bottom: 1px solid var(--description-color);
+  width: 270px;
+height: 31px;
+}
+
+/* Футер */
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--fotter-bagraund);
+}
+
+.footer-text {
+  width: 302px;
+color: var(--fotter-color);
+font-size: 15px;
+font-weight: 400;
+line-height: 1.33; 
+margin-left: auto;
+margin-right: auto;
 }
